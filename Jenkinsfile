@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'pwd'
+                sh 'mvn clean'
             }
         }
         stage('Test') {
