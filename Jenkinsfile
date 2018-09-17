@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building..'
                 sh 'pwd'
                 sh 'ls '
-                sh 'cd /ToolsQa/'
+                sh 'cd ToolsQa/'
                 sh 'mvn clean'
             }
         }
