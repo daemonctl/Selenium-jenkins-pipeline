@@ -1,15 +1,21 @@
-pipeline{
-    stages{
-        stage('Build'){
-            sh "mvn clean package -Dtest=ToolsQaTest test"
-        }
+pipeline {
+    agent any
 
-        stage('Test'){
-            echo 'Testing...'
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
         }
-
-        stage('Deploy'){
-            echo 'Deploying...'
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
         }
     }
 }
