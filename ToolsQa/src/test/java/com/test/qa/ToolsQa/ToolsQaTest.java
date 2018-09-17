@@ -60,7 +60,7 @@ public class ToolsQaTest extends PageObjects {
 		if (ITestResult.SUCCESS == result.getStatus()) {
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(source, new File(windows + result.getName() + System.currentTimeMillis() + ".png"));
+			FileUtils.copyFile(source, new File(linux + result.getName() + System.currentTimeMillis() + ".png"));
 		}
 		driver.quit();
 	}
