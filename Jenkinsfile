@@ -5,10 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'pwd'
-                sh 'ls '
+                sh 'mvn --version'
                 sh 'cd ToolsQa/'
-                sh 'mvn clean'
+                sh 'ls '
+                sh 'pwd'
+                sh 'mvn install'
             }
         }
         stage('Test') {
