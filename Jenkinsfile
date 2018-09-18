@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 dir ("ToolsQa"){
-                    sh 'mvn test -Dtest=ToolsQaTest tests'
+                    sh 'mvn test -Dtest=ToolsQaTest test'
                 }               	
             }
         }
