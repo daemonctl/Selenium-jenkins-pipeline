@@ -16,7 +16,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-               	sh 'mvn test -Dtest=ToolsQaTest tests'
+                dir ("ToolsQa"){
+                    sh 'mvn test -Dtest=ToolsQaTest tests'
+                }               	
             }
         }
         stage('Deploy') {
