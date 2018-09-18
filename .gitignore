@@ -12,6 +12,7 @@
 
 #java class
 /ToolsQa/target/*
+/ToolsQa/Screenshots/*
 
 # Package Files #
 *.jar
