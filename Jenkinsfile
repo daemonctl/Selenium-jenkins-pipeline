@@ -9,13 +9,14 @@ pipeline {
                 dir ('ToolsQa'){
                     sh 'ls '
                     sh 'pwd'
-                    sh 'mvn install'
+                    sh 'mvn clean'
                 }
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+               	sh 'mvn test -Dtest=ToolsQaTest tests'
             }
         }
         stage('Deploy') {
