@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'mvn --version'
-                sh 'cd ToolsQa/'
+                sh 'dir ToolsQa/'
                 sh 'ls '
                 sh 'pwd'
                 sh 'mvn install'
