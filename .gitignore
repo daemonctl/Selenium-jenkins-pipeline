@@ -11,8 +11,8 @@
 .mtj.tmp/
 
 #java class
-/ToolsQa/target/*
-/ToolsQa/Screenshots/*
+ToolsQa/target/*
+ToolsQa/Screenshots/*
 
 # Package Files #
 *.jar
